@@ -285,6 +285,16 @@
     max-width: 200px;
   }
   
+  .liens{
+    content: '•'; /* Puce personnalisée */
+    color: var(--or);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    border-radius: 8px;
+  }
+
   /* PIED DE PAGE */
   footer {
     background-color: var(--bleu-tres-fonce);
