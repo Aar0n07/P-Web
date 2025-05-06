@@ -1,57 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <title>Page d'accueil</title>
+    <title>Guide League of Legends - Initiation au jeu</title>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <h1>Guide League of legends</h1>
-    <img
-      src="image site lol/EGS_LeagueofLegends_RiotGames_S1.jpg"
-      alt="image accueil"
-      width="650"
-    />
-    <h2>Description brief</h2>
-    <p>
-      Dans league of legends, il y a deux équipes de cinqs, chacun possède une
-      base et le but du jeu et de réussir à pénétrer la base de l’adversaire
-      pour détruire leur batîment principal, le “nexus”
-    </p>
-    <img
-      src="image site lol/what is nexus lol-923e05c1548e.webp"
-      alt="nexus"
-      width="400"
-    />
-    <h2>La carte</h2>
-    <p>
-      Voici la carte du jeu, avec les principaux emplacements, étant, la
-      BottomLane (BotLane), La MidLane, La Jungle et la TopLane
-    </p>
-    <img
-      src="image site lol/A-Map-of-the-League-of-Legends-game-play-in-the-classic-mode.jpg"
-      alt="lol_carte"
-      width="600"
-    />
-    <h2>Les rôles</h2>
-    <p>
-      Dans le jeu, les équipe de cinq sont composé de plusieurs rôles, tous
-      différents, Les voici :
-    </p>
-    
-    <img
-      src="image site lol/st,small,507x507-pad,600x600,f8f8f8.jpg"
-      alt="support"
-      width="150"
-    />
-    <h2>Description détaillé</h2>
-    <p>League of Legends est un MOBA (Multiplayer Online Battle Arena) publié par Riot Games.
-        C'est l'un des jeux compétitifs les plus connus, qui domine la scène e-sportive depuis
-        des années. Les joueurs incarnent des « champions », qui ont tous des capacités passives et
-        quatre capacités activables. Il existe plus de 160 champions, et Riot Games continue 
-        d'en créer de nouveaux, de sorte qu'il y en a pour tous les styles de jeu. Lors d'une partie, 
-        chaque personne commence au niveau 1 et doit collecter de l'xp et de l'argent (Golds) en tuant
-        des monstres ou des champions adverses pour acheter de l'équipement et devenir plus 
-        puissant afin de pénétrer dans la base de l'adversaire. Des cibles peuvent être collectées pour 
-        obtenir des bonus pour toute votre équipe, vous rendant plus puissant pour pénétrer la base 
-        de votre adversaire</p>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <img
+            src="image site lol/yuumi_logo.jpg"
+            alt="Logo League of Legends"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#carte">La carte</a></li>
+            <li><a href="#roles">Les rôles</a></li>
+            <li><a href="#details">Détails</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="introduction">
+        <h1>Bienvenue dans l'univers de League of Legends</h1>
+        <div class="intro-content">
+          <div class="intro-text">
+            <h2>Les bases du jeu</h2>
+            <p>
+              Dans League of Legends, deux équipes de cinq joueurs s'affrontent.
+              Chacune possède une base et l'objectif est de pénétrer la base
+              adverse pour détruire leur bâtiment principal, le "Nexus".
+            </p>
+          </div>
+          <div class="intro-image">
+            <img
+              src="image site lol/what is nexus lol-923e05c1548e.webp"
+              alt="Nexus de League of Legends"
+            />
+            <p class="caption">Le Nexus, objectif principal à détruire</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="carte">
+        <h2>La carte de jeu</h2>
+        <p>
+          La carte de League of Legends est divisée en plusieurs zones
+          stratégiques :
+        </p>
+        <ul>
+          <li>La Bottom Lane (Bot Lane)</li>
+          <li>La Middle Lane (Mid Lane)</li>
+          <li>La Jungle</li>
+          <li>La Top Lane</li>
+        </ul>
+        <div class="carte-image">
+          <img
+            src="image site lol/A-Map-of-the-League-of-Legends-game-play-in-the-classic-mode.jpg"
+            alt="Carte de League of Legends"
+          />
+          <p class="caption">Vue d'ensemble de Summoner's Rift</p>
+        </div>
+      </section>
+
+      <section id="roles">
+        <h2>Les rôles des joueurs</h2>
+        <p>
+          Dans League of Legends, chaque équipe de cinq joueurs est composée de
+          plusieurs rôles, chacun ayant des responsabilités spécifiques :
+        </p>
+        <div class="roles-container">
+          <div class="role-card">
+            <h3>Top Laner</h3>
+            <p>
+              Combattant solitaire qui affronte l'adversaire en haut de la
+              carte.
+            </p>
+          </div>
+          <div class="role-card">
+            <h3>Jungler</h3>
+            <p>
+              Se déplace dans la Jungle pour aider ses coéquipiers et
+              contrôler les objectifs.
+            </p>
+          </div>
+          <div class="role-card">
+            <h3>Mid Laner</h3>
+            <p>
+              Occupe la position centrale, souvent avec des champions à fort
+              potentiel de dégâts.
+            </p>
+          </div>
+          <div class="role-card">
+            <h3>ADC</h3>
+            <p>
+              Carry de dégâts, généralement positionné en bas avec le support.
+            </p>
+          </div>
+          <div class="role-card">
+            <h3>Support</h3>
+            <p>
+              Protège l'ADC et fournit de la vision et contrôle pour l'équipe.
+            </p>
+          </div>
+        </div>
+        <div class="roles-image">
+          <img
+            src="image site lol/role-lol.png"
+            alt="Les rôles dans League of Legends"
+          />
+        </div>
+      </section>
+
+      <section id="details">
+        <h2>League of Legends en détail</h2>
+        <p>
+          League of Legends est un MOBA (Multiplayer Online Battle Arena)
+          développé par Riot Games. C'est l'un des jeux compétitifs les plus
+          populaires au monde, dominant la scène e-sportive depuis de nombreuses
+          années.
+        </p>
+        <p>
+          Les joueurs incarnent des « champions », chacun possédant des
+          capacités passives et quatre capacités activables. Avec plus de 160
+          champions disponibles, et Riot Games qui continue d'en créer
+          régulièrement, il existe un style de jeu pour chaque joueur.
+        </p>
+        <p>
+          Au début d'une partie, chaque joueur commence au niveau 1 et doit
+          accumuler de l'expérience et des ressources (Golds) en éliminant des
+          sbires, des monstres neutres ou des champions adverses. Ces ressources
+          permettent d'acheter de l'équipement pour devenir plus puissant et, à
+          terme, envahir la base adverse. Des objectifs stratégiques sur la
+          carte offrent également des bonus importants qui peuvent faire
+          basculer l'issue d'une partie.
+        </p>
+        <div class="fun-content">
+          <p>Un petit clin d'œil aux joueurs :</p>
+          <div class="rammus-gif">
+            <img src="" alt="RammusOK" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Guide d'initiation à League of Legends | Ce site n'est pas
+          affilié à Riot Games
+        </p>
+        <p>
+          League of Legends et tous les éléments associés sont la propriété de
+          Riot Games, Inc.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

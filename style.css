@@ -1,0 +1,334 @@
+/* Style CSS simplifié pour site League of Legends */
+
+/* Couleurs principales utilisées dans tout le site */
+:root {
+    --bleu-fonce: #091428;        /* Couleur de fond principale */
+    --bleu-tres-fonce: #0a1428;   /* Couleur pour l'en-tête et pied de page */
+    --or: #c8aa6e;                /* Couleur d'accent principale (or) */
+    --or-clair: #f0e6d2;          /* Version plus claire de l'or pour le texte */
+    --bleu-clair: #0ac8b9;        /* Accent bleu */
+    --rouge: #e84057;             /* Accent rouge */
+    --violet: #5b2c92;            /* Accent violet */
+    --bordure-or: #785a28;        /* Couleur de bordure dorée */
+  }
+  
+  /* Réinitialisation des marges et espacement */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style général de la page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bleu-fonce);
+    color: var(--or-clair);
+    /* Image de fond avec filtre sombre */
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Filtre sombre sur l'image de fond pour améliorer la lisibilité */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 20, 40, 0.85); /* Bleu foncé semi-transparent */
+    z-index: -1;
+  }
+  
+  /* Container pour centrer le contenu */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Style des images */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* HEADER ET NAVIGATION */
+  header {
+    background-color: var(--bleu-tres-fonce);
+    padding: 2px 0;
+    border-bottom: 2px solid var(--bordure-or);
+    position: sticky; /* Reste visible quand on défile */
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Disposition flex pour l'en-tête */
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style du logo */
+  #logo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid var(--or);
+  }
+  
+  #logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Animation douce */
+  }
+  
+  #logo img:hover {
+    transform: scale(1.1); /* Agrandit légèrement au survol */
+  }
+  
+  /* Menu de navigation */
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: var(--or);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--or-clair);
+  }
+  
+  /* CONTENU PRINCIPAL */
+  main {
+    padding: 40px 0;
+  }
+  
+  /* Style des sections */
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(10, 20, 40, 0.8); /* Bleu foncé semi-transparent */
+    border-radius: 8px;
+    border-left: 4px solid var(--or);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Titres */
+  h1, h2, h3 {
+    color: var(--or);
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #a3936a;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--bordure-or);
+    padding-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    color: var(--bleu-clair);
+  }
+  
+  /* Paragraphes */
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* SECTION INTRODUCTION */
+  .intro-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .intro-text, .intro-image {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .intro-image img {
+    border: 3px solid var(--bordure-or);
+  }
+  
+  .caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #a79d8b;
+    margin-top: 10px;
+  }
+  
+  /* SECTION CARTE */
+  .carte-image {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .carte-image img {
+    max-width: 100%;
+    border: 3px solid var(--bordure-or);
+  }
+  
+  /* SECTION RÔLES */
+  .roles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+  }
+  
+  .role-card {
+    background: rgba(10, 20, 40, 0.9);
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--bordure-or);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Codes couleurs pour chaque rôle */
+  .role-card:nth-child(1) {
+    border-left: 3px solid #a3936a; /* Top */
+  }
+  
+  .role-card:nth-child(2) {
+    border-left: 3px solid #5b9c51; /* Jungle */
+  }
+  
+  .role-card:nth-child(3) {
+    border-left: 3px solid var(--violet); /* Mid */
+  }
+  
+  .role-card:nth-child(4) {
+    border-left: 3px solid var(--rouge); /* ADC */
+  }
+  
+  .role-card:nth-child(5) {
+    border-left: 3px solid var(--bleu-clair); /* Support */
+  }
+  
+  .role-card:hover {
+    transform: translateY(-3px); /* Effet de flottement au survol */
+  }
+  
+  .roles-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .roles-image img {
+    max-width: 600px;
+    border: 3px solid var(--bordure-or);
+  }
+  
+  /* Style des listes */
+  ul {
+    list-style-type: none;
+    margin-left: 20px;
+  }
+  
+  ul li {
+    padding: 5px 0;
+  }
+  
+  ul li::before {
+    content: '•'; /* Puce personnalisée */
+    color: var(--or);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  /* Section contenu amusant */
+  .fun-content {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(10, 20, 40, 0.7);
+    border-radius: 8px;
+    border: 1px solid var(--bordure-or);
+  }
+  
+  .rammus-gif {
+    margin: 15px auto;
+    max-width: 200px;
+  }
+  
+  /* PIED DE PAGE */
+  footer {
+    background-color: var(--bleu-tres-fonce);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid var(--bordure-or);
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 5px 0;
+    color: #a09b8c;
+  }
+  
+  /* DESIGN RESPONSIVE */
+  @media (max-width: 768px) {
+    /* Pour les écrans mobiles */
+    nav ul {
+      flex-direction: column; /* Menu vertical sur mobile */
+      gap: 10px;
+    }
+    
+    .intro-content {
+      flex-direction: column; /* Contenu en colonne sur mobile */
+    }
+    
+    h1 {
+      font-size: 2rem; /* Titre plus petit sur mobile */
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    section {
+      padding: 15px;
+    }
+    
+    .roles-container {
+      grid-template-columns: 1fr; /* Une colonne sur mobile */
+    }
+  }
+  
+  /* Pour le défilement doux vers les ancres */
+  html {
+    scroll-behavior: smooth;
+  }
