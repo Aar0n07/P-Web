@@ -24,8 +24,6 @@
     font-family: Arial, sans-serif;
     background-color: var(--bleu-fonce);
     color: var(--or-clair);
-    /* Image de fond avec filtre sombre */
-    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -271,7 +269,7 @@
   }
   
   /* Section contenu amusant */
-  .fun-content {
+  .rammus{
     text-align: center;
     margin-top: 30px;
     padding: 20px;
@@ -292,7 +290,6 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em;
-    border-radius: 8px;
   }
 
   /* PIED DE PAGE */
@@ -341,4 +338,97 @@
   /* Pour le défilement doux vers les ancres */
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Styles spécifiques pour la page des rôles */
+  .role-section {
+    margin-bottom: 50px;
+    padding: 25px;
+    background-color: rgba(10, 20, 40, 0.8);
+    border-radius: 8px;
+    border-left: 4px solid var(--or);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  .role-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .role-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .role-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+  }
+  .role-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  .role-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  .role-image img {
+    max-width: 100%;
+    border: 3px solid var(--bordure-or);
+    transition: transform 0.3s ease;
+  }
+  .role-image img:hover {
+    transform: scale(1.03);
+  }
+  /* Code couleur pour chaque rôle */
+  #support {
+    border-left: 4px solid var(--bleu-clair);
+  }
+  #adc {
+    border-left: 4px solid var(--rouge);
+  }
+  #mid {
+    border-left: 4px solid var(--violet);
+  }
+  #jungle {
+    border-left: 4px solid #5b9c51; /* Vert pour la jungle */
+  }
+  #top {
+    border-left: 4px solid #a3936a; /* Or foncé pour le top */
+  }
+  .role-duo {
+    background: linear-gradient(135deg, rgba(10, 200, 185, 0.2), rgba(232, 64, 87, 0.2));
+    border: 1px solid var(--bordure-or);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  .role-description {
+    background: linear-gradient(135deg, rgba(10, 200, 185, 0.2), rgba(232, 64, 87, 0.2));
+    border: 1px solid var(--bordure-or);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .role-characteristics {
+    margin-top: 20px;
+    background-color: rgba(9, 20, 40, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .role-characteristics h4 {
+    color: var(--or);
+    margin-bottom: 10px;
+  }
+  .role-characteristics ul {
+    margin-left: 20px;
   }

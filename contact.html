@@ -1,26 +1,192 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Page de Contact</title>
+    <title>Contact - Guide League of Legends</title>
     <link rel="stylesheet" href="style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <h1>Page de Contact</h1>
-    <h2>Qui suis-je ?</h2>
-    <p>
-      Je suis Aaron (Fer I en classé mais mon guide reste utilisable), Vous
-      voulez me contactez ? Pour me demander des conseils ou simplement me
-      complimenter ? Très bien, voici :
-    </p>
+    <header>
+      <div class="container">
+        <div id="logo">
+          <img
+            src="image site lol/yuumi_logo.jpg"
+            alt="Logo League of Legends"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="roles.html">Les rôles</a></li>
+            <li><a href="objectifs.html">Les objectifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <h2>Formulaire de contact :</h2>
-    <label for="Name">Votre nom :</label><br />
-    <input type="text" id="Name" /><br />
-    <label for="Adresse">Adresse Email :</label><br />
-    <input type="text" id="Adresse" /><br />
-    <label for="Message" id="Message">Votre Message :</label><br />
-    <input type="text" id="Message" />
+    <main class="container">
+      <section id="contact-intro">
+        <h1>Contactez-nous</h1>
+        <div class="intro-content">
+          <div class="intro-text">
+            <h2>Qui suis-je ?</h2>
+            <p>
+              Je suis Aaron (Fer I en classé mais mon guide reste utilisable).
+              Vous voulez me contacter pour des conseils ou simplement me
+              complimenter ? Très bien, voici comment faire !
+            </p>
+            <p>
+              Passionné par League of Legends, j'ai créé
+              ce guide pour aider les nouveaux joueurs à comprendre les bases du
+              jeu et à progresser plus rapidement.
+            </p>
+          </div>
+          <div class="role-image">
+            <img
+              src="image site lol/aaron.jpg"
+              alt="Profil du créateur"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="formulaire">
+        <h2>Formulaire de contact</h2>
+        <p>
+          Vous avez une question sur League of Legends ? Vous souhaitez me
+          proposer une amélioration pour le guide ? N'hésitez pas à m'envoyer un
+          message !
+        </p>
+
+        <div
+          class="role-characteristics"
+          style="padding: 25px; margin-top: 30px"
+        >
+          <form id="contact-form">
+            <div style="margin-bottom: 20px">
+              <label for="name">Votre nom :</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Entrez votre nom"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  margin-top: 8px;
+                  background-color: rgba(10, 20, 40, 0.7);
+                  border: 1px solid var(--bordure-or);
+                  color: var(--or-clair);
+                  border-radius: 4px;
+                "
+                required
+              />
+            </div>
+
+            <div style="margin-bottom: 20px">
+              <label for="email">Adresse Email :</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Entrez votre email"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  margin-top: 8px;
+                  background-color: rgba(10, 20, 40, 0.7);
+                  border: 1px solid var(--bordure-or);
+                  color: var(--or-clair);
+                  border-radius: 4px;
+                "
+                required
+              />
+            </div>
+
+            <div style="margin-bottom: 20px">
+              <label for="subject">Sujet :</label>
+              <select
+                id="subject"
+                name="subject"
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  margin-top: 8px;
+                  background-color: rgba(10, 20, 40, 0.7);
+                  border: 1px solid var(--bordure-or);
+                  color: var(--or-clair);
+                  border-radius: 4px;
+                "
+              >
+                <option value="question">Question sur le jeu</option>
+                <option value="suggestion">Suggestion d'amélioration</option>
+                <option value="bug">Signaler une erreur</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 20px">
+              <label for="message">Votre Message :</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Écrivez votre message ici..."
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  margin-top: 8px;
+                  background-color: rgba(10, 20, 40, 0.7);
+                  border: 1px solid var(--bordure-or);
+                  color: var(--or-clair);
+                  border-radius: 4px;
+                  resize: vertical;
+                "
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              style="
+                background-color: var(--or);
+                color: var(--bleu-tres-fonce);
+                border: none;
+                padding: 12px 25px;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+              "
+            >
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <div class="rammus">
+        <h3>Merci de votre visite !</h3>
+        <div class="rammus-gif">
+          <img src="image site lol/rammus-ok.gif" alt="RammusOK" />
+        </div>
+        <p>OK.</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Guide d'initiation à League of Legends | Ce site n'est pas
+          affilié à Riot Games
+        </p>
+        <p>
+          League of Legends et tous les éléments associés sont la propriété de
+          Riot Games, Inc.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
