@@ -1,5 +1,3 @@
-/* Style CSS simplifié pour site League of Legends */
-
 /* Couleurs principales utilisées dans tout le site */
 :root {
     --bleu-fonce: #091428;        /* Couleur de fond principale */
@@ -236,7 +234,7 @@
   }
   
   .role-card:hover {
-    transform: translateY(-3px); /* Effet de flottement au survol */
+    transform: translateY(-3px); 
   }
   
   .roles-image {
@@ -268,7 +266,6 @@
     margin-left: -1em;
   }
   
-  /* Section contenu amusant */
   .rammus{
     text-align: center;
     margin-top: 30px;
@@ -330,12 +327,8 @@
       padding: 15px;
     }
     
-    .roles-container {
-      grid-template-columns: 1fr; /* Une colonne sur mobile */
-    }
   }
   
-  /* Pour le défilement doux vers les ancres */
   html {
     scroll-behavior: smooth;
   }
@@ -387,6 +380,7 @@
   .role-image img:hover {
     transform: scale(1.03);
   }
+  
   /* Code couleur pour chaque rôle */
   #support {
     border-left: 4px solid var(--bleu-clair);
@@ -398,11 +392,12 @@
     border-left: 4px solid var(--violet);
   }
   #jungle {
-    border-left: 4px solid #5b9c51; /* Vert pour la jungle */
+    border-left: 4px solid #5b9c51; 
   }
   #top {
-    border-left: 4px solid #a3936a; /* Or foncé pour le top */
+    border-left: 4px solid #a3936a; 
   }
+  
   .role-duo {
     background: linear-gradient(135deg, rgba(10, 200, 185, 0.2), rgba(232, 64, 87, 0.2));
     border: 1px solid var(--bordure-or);
